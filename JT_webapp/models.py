@@ -10,5 +10,10 @@ class testimonies(models.Model):
     story = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
+class contact_us(models.Model):
+        First_name = models.CharField(max_length=300)
+    Last_name = models.CharField(max_length=300)
+    Question =  models.TextField()
+
     def __str__(self):
      return self.username
